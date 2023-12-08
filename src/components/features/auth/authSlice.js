@@ -31,6 +31,14 @@ export const contact = createAsyncThunk('auth/contact',async (contactData,thunkA
     }
 })
 
+export const feedback = createAsyncThunk('auth/feedback',async(feedBackData,thunkAPI)=>{
+    try {
+        return await authSerivces.feedbackService(feedBackData)
+    } catch (error) {
+        return thunkAPI.rejectWithValue(error)
+    }
+})
+
 export const authSlice = createSlice({
     name:"auth",
     initialState:intialState,
@@ -77,6 +85,30 @@ export const authSlice = createSlice({
             state.message =action.error
         })
         .addCase("Reset_all",()=>intialState)
+        builder.addCase(feedback.pending,(state)=>{
+            state.isError = false;
+            state.isLoading = true;
+            state.isSuccess = false;
+        })
+        .addCase(feedback.fulfilled,(state,action)=>{
+            state.isError = false
+            state.isSuccess = true
+            state.isLoading = false
+            if(action.payload?.error)
+            {
+                toast.error(action.payload?.error)
+            }
+            else
+            {
+                toast.success('FeedBack Submitted')
+            }
+        })
+        .addCase(feedback.rejected,(state,action)=>{
+            state.isError = true
+            state.isLoading = false
+            state.isSuccess = false
+            state.message =action.error
+        })
     }
 })
 

@@ -68,6 +68,7 @@ const AdminSessionAddition = () => {
                         formik.touched.date && formik.errors.date
                     }
                 </div>
+                <label htmlFor="" style={{color:"red"}}>*Date must be in format of YYYY-MM-DD</label>
                 <CustomtInput type="text" placeholder="Enter Session Venue" name='venue' onChange={formik.handleChange('venue')} value={formik.values.venue}/>
                 <div className="error">
                     {

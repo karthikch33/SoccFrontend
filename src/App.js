@@ -13,6 +13,7 @@ import Team from './components/pages/Team';
 import { Helmet } from 'react-helmet-async';
 
 import Announcements from './components/pages/Announcements';
+import FeedBack from './components/pages/FeedBack';
 function App() {
   return (
 
@@ -29,6 +30,7 @@ function App() {
                 <Route path='/announcements' element={<Announcements/>}/>
                 <Route path='/adminsessionaddition' element={<AdminSessionAddition/>}/>
                 <Route path='/registrations/:id' element={<SessionRegistraion/>}/>
+                <Route path='/feedback/:id' element={<FeedBack/>}/>
                 <Route path='/:unwanted' element={<PageNotFound/>}/>
                 <Route path='/sessions/:unwanted' element={<PageNotFound/>}/>
                 <Route path='/contact/:unwanted' element={<PageNotFound/>}/>

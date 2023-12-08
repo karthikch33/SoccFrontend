@@ -21,9 +21,21 @@ const contactService = async(contactData)=>{
     }
 }
 
+const feedbackService = async(FeedBackData)=>{
+    try {
+        const response = await axios.post(`http://localhost:1507/api/auth/feedback`, FeedBackData)
+        return response.data;
+    } catch (error) {
+        console.error('Error:', error.response.data);
+        throw error; // Rethrow the error to propagate it
+    }
+    
+}
+
 const authSerivces = {
     registrationService,
-    contactService
+    contactService,
+    feedbackService
 }
 
 export default authSerivces
