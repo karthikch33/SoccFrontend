@@ -23,7 +23,7 @@ const contactService = async(contactData)=>{
 
 const feedbackService = async(FeedBackData)=>{
     try {
-        const response = await axios.post(`http://localhost:1507/api/auth/feedback`, FeedBackData)
+        const response = await axios.post(`${url}auth/feedback`, FeedBackData)
         return response.data;
     } catch (error) {
         console.error('Error:', error.response.data);
