@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Image, Watermark } from 'antd';
 import TeamData from '../static/TeamData';
 import Meta from '../Meta';
+import ProfileModal from './ProfileModal';
 
 const previewName =(props)=>{
   const {name} = props
@@ -11,8 +12,33 @@ const previewName =(props)=>{
 } 
 
 
+
+
+
 const Team = () => {
-  const [name,setName] = useState(false)
+  const [open, setOpen] = useState(false);
+  const [name,setName] = useState("")
+  const [id,setId] = useState("")
+  const [mail,setMail] = useState("")
+  const [img,setImg] = useState("")
+  const [year,setYear] = useState("")
+  const [linkedIn,setLinkedIn] = useState("")
+
+  const handleOk = (data) => {
+    const {Iname,Iid,Imail,Iyear,IlinkedIn,img} = data
+    setOpen(true);
+    setName(Iname)
+    setId(Iid)
+    setMail(Imail)
+    setLinkedIn(IlinkedIn)
+    setYear(Iyear)
+    setImg(img)
+  };
+
+  const handleCancel = () => {
+    setOpen(false);
+  };
+  
 
   const antImageMaskInfo = document.querySelector('.container');
 
@@ -35,18 +61,21 @@ const Team = () => {
         {TeamData.map((index) => (
           <div key={index} className='col-lg-4 col-md-6 col-sm-12 mb-4'>
             <div className='gallery-img d-flex flex-column align-items-center'>
-              <Image
+              {/* <Image
                 width={200}
-                src={index?.img}
+                src={}
                 alt={`Team Member ${index}`}
                 className='img-fluid'
                 preview="fasf"
-              />
+              /> */}
+              <img src={index?.img} alt="" className='img-fluid' style={{cursor:"pointer",borderRadius:"20px"}} width={200} height={200} onClick={()=>handleOk(index)}/>
               <span className='fs-4 fst-italic'>{index?.position}</span>
             </div>
+           
           </div>
         ))}
       </div>
+      <ProfileModal open={open} name={name} id={id} mail={mail} year={year} linkedIn={linkedIn} handleOk={handleOk} handleCancel ={handleCancel} img={img}/>
     </div>
     </Watermark>
   );

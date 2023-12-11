@@ -88,7 +88,7 @@ const ContactPage = () => {
                 formik.touched.message && formik.errors.message
               }
               </div>
-              <label htmlFor="" className='text-danger'>*Don't Send UnWanted Messages</label>
+              <label htmlFor="" className='text-danger d-none'>*Don't Send UnWanted Messages</label>
             </div>
 
             <button type="submit" className="btn btn-primary">Submit</button>
