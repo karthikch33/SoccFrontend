@@ -7,6 +7,7 @@ const Loading = () => {
     <div className={`loading-container'}`}>
       <div className="loading-spinner"></div>
       <p className='my-3'>Loading...</p>
+      <label htmlFor="" className='text-danger'>Render Take's Time To Load For The First Time</label>
     </div>
         </div>
     </div>

@@ -54,8 +54,8 @@ const OngoingSessions = () => {
           <div className="imgdiv">
             <Image
               width={200}
-              src="https://ychef.files.bbci.co.uk/976x549/p0dmqnyd.jpg"
-              className='img-f'
+              src={currentData?.images}
+              className='img-fluid'
           />
           </div>
         </div>
@@ -98,12 +98,32 @@ const OngoingSessions = () => {
         </div>
       </div>
       {
-         Array.isArray(sessionsData) ? Array.isArray(sessionsData) && sessionsData?.map((element,i)=>{
-          const sessionDescription = completeSessionDescription(element);
-          const outcomeDescription = completeOutComeDescription(element);
-        //   const History = 
-          return compareTwoDates(element?.date, date) ?  <CardContainer sessionDescription={sessionDescription} outcomeDescription={outcomeDescription} sessionId = {element?._id} sessiontitle = {element?.sessiontitle} today={true} />  :""
-        }): <Loading/> 
+        <div className="container">
+        <div className="row">
+          {Array.isArray(sessionsData) ? (
+            sessionsData.map(element => {
+              const sessionDescription = completeSessionDescription(element);
+              const outcomeDescription = completeOutComeDescription(element);
+              // const historyDescription = completeHistoryDescription(element);
+  
+              return compareTwoDates(element?.date, date) ? (
+                <div key={element?._id} className="col-md-4 mb-4">
+                  <CardContainer
+                    sessionDescription={sessionDescription}
+                    outcomeDescription={outcomeDescription}
+                    sessionId={element?._id}
+                    sessiontitle={element?.sessiontitle}
+                    today={true}
+                    // history={historyDescription}
+                  />
+                </div>
+              ) : null;
+            })
+          ) : (
+            <Loading />
+          )}
+        </div>
+      </div>
     } 
     </div>
   );

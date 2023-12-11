@@ -7,14 +7,14 @@ const tabList = [
       key: 'tab1',
       tab: 'Session',
     },
-    {
-      key: 'tab2',
-      tab: 'Outcomes',
-    },
-    {
-      key: 'tab3',
-      tab: 'History',
-    },
+    // {
+    //   key: 'tab2',
+    //   tab: 'Outcomes',
+    // },
+    // {
+    //   key: 'tab3',
+    //   tab: 'History',
+    // },
   ];
 
   
@@ -40,6 +40,7 @@ const CardContainer = (props) => {
         <Card
         style={{
           width: '100%',
+          minHeight:"600px"
         }}
         title= {sessiontitle}
         extra={<Link to={today === true?`/registrations/${sessionId}`:`/feedback/${sessionId}`}>{today?"Register Here":"Submit FeedBack"}</Link>}

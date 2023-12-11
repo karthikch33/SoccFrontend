@@ -4,8 +4,8 @@ import * as yup from 'yup'
 import {useFormik} from 'formik'
 import { toast } from 'react-toastify'
 import { useDispatch, useSelector } from 'react-redux'
-import { sessionRegister } from '../features/session/sessionSlice'
 import CustomAlert from '../CustomAlert'
+import { sessionRegister } from '../features/session/sessionSlice'
 
 const AdminSessionAddition = () => {
 
@@ -32,18 +32,30 @@ const AdminSessionAddition = () => {
         }
     },[AlreadyRegistered])
 
+
+    const handleFileChange = event => {
+        const selectedFile = event.currentTarget.files[0];
+    
+        console.log('File Name:', selectedFile.name);
+        console.log('File Type:', selectedFile.type);
+    
+        formik.setFieldValue('images', selectedFile);
+      };
+
     const formik = useFormik({
         initialValues:{
             sessiontitle:"",
             date:'',
             venue:'',
             startAt:'',
-            ends:''
+            ends:'',
+            images:''
         },
         validationSchema:schema,
         onSubmit:(values)=>{    
+            console.log(values);
             dispatch(sessionRegister(values))
-            formik.resetForm()
+            // formik.resetForm()
         }
     })
 
@@ -87,6 +99,15 @@ const AdminSessionAddition = () => {
                         formik.touched.ends && formik.errors.ends
                     }
                 </div>
+
+                <CustomtInput type="text" placeholder="Enter Session Image URL" name='images' onChange={formik.handleChange('images')} value={formik.values.images}/>
+
+                <div className="error">
+                    {
+                        formik.touched.images && formik.errors.images
+                    }
+                </div>
+
                 <button className='btn btn-warning text-dark' type='submit'>Add Session</button>
                 </form>
             </div>

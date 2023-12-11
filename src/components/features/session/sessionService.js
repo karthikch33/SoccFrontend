@@ -2,6 +2,7 @@ import axios from "axios"
 import url from "../../utils/base_url"
 
 const registerSessionService = async (sessionData)=>{
+    console.log(sessionData);
     const response = await axios.post(`${url}admin/sessionregister`,sessionData)
     console.log(response.data);
     return response.data
