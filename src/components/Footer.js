@@ -6,17 +6,25 @@ import {BiLogoTelegram,BiLastPage} from 'react-icons/bi'
 import {BsFillTelephoneFill,BsLinkedin} from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 const Footer = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
+    
     <footer className='footer'>
     <div className='container-xxl footer-cont'>
         <div className="row">
           <div className="col-4">
                 <h4>Explore</h4>
                 <ul className='footer-icons'>
-                <Link to={'/codingchannels'}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}} >Coding Channels </label></li></Link>
-                 <Link to={'/team'}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}}>Team</label></li></Link>
-                 <Link to={'/announcements'}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}}>Announcements</label></li></Link>
-                 <Link to={'/sessions'}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}}> Registrations</label></li></Link>
+                <Link to={'/codingchannels'}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}} onClick={handleScrollToTop}>Coding Channels </label></li></Link>
+                 <Link to={'/team'}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}} onClick={handleScrollToTop}>Team</label></li></Link>
+                 <Link to={'/announcements'} onClick={handleScrollToTop}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}}>Announcements</label></li></Link>
+                 <Link to={'/sessions'} onClick={handleScrollToTop}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}}> Registrations</label></li></Link>
                 </ul>
               </div>
               <div className="col-4">
@@ -31,10 +39,11 @@ const Footer = () => {
               <div className="col-4">
                 <h4>Pages</h4>
                 <ul className='footer-icons'>
-                <Link to={'/'} ><li><BiLastPage/><label style={{cursor:"pointer"}} className='mx-4'>Home</label></li></Link>
-                 <Link to={'/contact'} ><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}}>Contact</label></li></Link>
-                 <Link to={'/team'} ><li><BiLastPage/><label style={{cursor:"pointer"}} className='mx-4'>Team</label></li></Link>
-                 <Link to={'/sessions'} ><li><BiLastPage/><label style={{cursor:"pointer"}} className='mx-4'>Sessions</label></li></Link>
+                <Link to={'/'} ><li><BiLastPage/><label style={{cursor:"pointer"}} className='mx-4' onClick={handleScrollToTop}>Home</label></li></Link>
+                 <Link to={'/contact'} ><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}}
+                 onClick={handleScrollToTop}>Contact</label></li></Link>
+                 <Link to={'/team'} ><li><BiLastPage/><label style={{cursor:"pointer"}} className='mx-4' onClick={handleScrollToTop}>Team</label></li></Link>
+                 <Link to={'/sessions'} ><li><BiLastPage/><label style={{cursor:"pointer"}} onClick={handleScrollToTop}className='mx-4'>Sessions</label></li></Link>
                 </ul>
               </div>
          </div>
