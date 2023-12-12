@@ -9,7 +9,7 @@ const TeamData = [
     IlinkedIn:"https://www.linkedin.com/in/sai-harsha-pingali-64274a226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
-        img:"https://static.vecteezy.com/system/resources/previews/007/319/933/original/black-avatar-person-icons-user-profile-icon-vector.jpg",
+        img:"https://res.cloudinary.com/ddkdeeue3/image/upload/v1702395670/jgho1ozcaxk9vfrc43at.jpg",
         position:"VICE PRESIDENT",
         name:"Badari Narayana",
         Iname:"Badari Narayana",
