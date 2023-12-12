@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="col-4">
                 <h4>Explore</h4>
                 <ul className='footer-icons'>
-                <Link to={'/codingchannels'}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}} onClick={handleScrollToTop}>Coding Channels </label></li></Link>
+                {/* <Link to={'/codingchannels'}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}} onClick={handleScrollToTop}>Coding Channels </label></li></Link> */}
                  <Link to={'/team'}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}} onClick={handleScrollToTop}>Team</label></li></Link>
                  <Link to={'/announcements'} onClick={handleScrollToTop}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}}>Announcements</label></li></Link>
                  <Link to={'/sessions'} onClick={handleScrollToTop}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}}> Registrations</label></li></Link>
@@ -30,10 +30,9 @@ const Footer = () => {
               <div className="col-4">
                 <h4>Social</h4>
                 <ul className='footer-icons d-flex flex-column'>
-                 <Link><li><BsInstagram/><label className='mx-4'>Instagram</label></li></Link>
+                 <Link to={"https://www.instagram.com/socc_klef/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="}><li><BsInstagram/><label className='mx-4'>Instagram</label></li></Link>
                  <Link><li><BsLinkedin/><label className='mx-4'>LinkedIn</label></li></Link>
-                 <Link><li><BiLogoTelegram/><label className='mx-4'>Telegram</label></li></Link>
-                 <Link><li><BsFillTelephoneFill/><label className='mx-4'>Contact</label></li></Link>
+                 <Link to={"https://t.me/+2zT7G-89XCw3OTc9"}><li><BiLogoTelegram/><label className='mx-4'>Telegram</label></li></Link>
                 </ul>
               </div>
               <div className="col-4">

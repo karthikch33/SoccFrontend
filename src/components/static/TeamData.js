@@ -4,7 +4,7 @@ const TeamData = [
     position:"PRESIDENT",
     Iname:"Sai Harsha",
     Iid:"2100031411",
-    Iyear:"3",
+    Iyear:"3rd",
     Imail:"2100031411@kluniversity.in",
     IlinkedIn:"https://www.linkedin.com/in/sai-harsha-pingali-64274a226?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
@@ -23,9 +23,9 @@ const TeamData = [
         position:"DIRECTOR",
         name:"Phani Charan",
         Iname:"Phani Charan",
-        Iid:"2100031411",
+        Iid:"2100031346",
         Iyear:"3rd",
-        Imail:"2100031411@kluniversity.in",
+        Imail:"2100031346@kluniversity.in",
         IlinkedIn:"https://www.linkedin.com/in/venkata-phani-charan-reddy-udumula-928125221/"
     },
     {
@@ -65,7 +65,7 @@ const TeamData = [
         Iname:"Kvss Pavan Aditya",
         Iid:"2100031268",
         Iyear:"3rd",
-        Imail:"210003126@kluniversity.in",
+        Imail:"2100031268@kluniversity.in",
         IlinkedIn:"https://www.linkedin.com/in/chalavadi-kvss-pavan-aditya-9b9722245/"
     },
     {
@@ -79,13 +79,23 @@ const TeamData = [
         IlinkedIn:"https://www.linkedin.com/in/yogendra-chowdary-ab37a4248/"
     },
     {
+        img:"https://res.cloudinary.com/dpkdi73b4/image/upload/v1702365105/lh71dkycnwayfvy3rlz3.jpg",
+        position:"Director",
+        name:"LINGAMGUNTLA BALAJI",
+        Iname:"LINGAMGUNTLA BALAJI",
+        Iid:"2100031231",
+        Iyear:"3rd",
+        Imail:"2100031231@kluniversity.in",
+        IlinkedIn:""
+    },
+    {
         img:"http://res.cloudinary.com/dpkdi73b4/image/upload/v1701943661/g2sspvfmkl9nkkal3umq.jpg",
         position:"CORE",
         name:"Afreen",
         Iname:"Afreen",
-        Iid:"",
+        Iid:"2100030338",
         Iyear:"3rd",
-        Imail:"",
+        Imail:"2100030338@kluniversity.in",
         IlinkedIn:""
     },
     {
@@ -93,9 +103,19 @@ const TeamData = [
         position:"CORE",
         name:"Srinivas",
         Iname:"Srinivas",
-        Iid:"",
+        Iid:"2100030135",
         Iyear:"3rd",
-        Imail:"",
+        Imail:"2100030135@kluniversity.in",
+        IlinkedIn:""
+    },
+    {
+        img:"https://res.cloudinary.com/dpkdi73b4/image/upload/v1702286461/pkv61fmr6n4exmgh56mk.jpg",
+        position:"CORE",
+        name:"Jeevan Sravanth",
+        Iname:"Jeevan Sravanth",
+        Iid:"2100030402",
+        Iyear:"3rd",
+        Imail:"2100030402@kluniversity.in",
         IlinkedIn:""
     },
     {
@@ -103,23 +123,23 @@ const TeamData = [
         position:"CORE",
         name:"Sravya",
         Iname:"Sravya",
-        Iid:"",
+        Iid:"2100030775",
         Iyear:"3rd",
-        Imail:"",
+        Imail:"2100030775@kluniversity.in",
         IlinkedIn:""
     },
     {
         img:"http://res.cloudinary.com/dpkdi73b4/image/upload/v1701943685/zrnja7fkza2usfcnhg8o.jpg",
         position:"CORE",
-        name:"Moksha",
-        Iname:"Moksha",
+        name:"Mokshabalineni",
+        Iname:"Mokshabalineni",
         Iid:"",
-        Iyear:"2md",
+        Iyear:"2nd",
         Imail:"",
         IlinkedIn:""
     },
     {
-        img:"https://static.vecteezy.com/system/resources/previews/007/319/933/original/black-avatar-person-icons-user-profile-icon-vector.jpg",
+        img:"https://res.cloudinary.com/dpkdi73b4/image/upload/v1702365105/eq6bmbualdkf9p8byqtl.jpg",
         position:"CORE",
         name:"Kavya",
         Iname:"Sanivarapu Kavya Sree",
@@ -131,11 +151,11 @@ const TeamData = [
     {
         img:"http://res.cloudinary.com/dpkdi73b4/image/upload/v1701944655/ljlda3sn63llm89wwlws.jpg",
         position:"CORE",
-        name:"Srinivas",
-        Iname:"Srinivas",
-        Iid:"",
+        name:"K. Srinivas",
+        Iname:"K. Srinivas",
+        Iid:"2200030391",
         Iyear:"2nd",
-        Imail:"",
+        Imail:" 2200030391@kluniversity.in",
         IlinkedIn:""
     }
 ]

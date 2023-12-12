@@ -40,7 +40,8 @@ const CardContainer = (props) => {
         <Card
         style={{
           width: '100%',
-          minHeight:"600px"
+          minHeight:"600px",
+          boxShadow:"0px 2px 3px 0px rgba(0,0,0,0.2)"
         }}
         title= {sessiontitle}
         extra={<Link to={today === true?`/registrations/${sessionId}`:`/feedback/${sessionId}`}>{today?"Register Here":"Submit FeedBack"}</Link>}

@@ -68,7 +68,7 @@ const Team = () => {
                 className='img-fluid'
                 preview="fasf"
               /> */}
-              <img src={index?.img} alt="" className='img-fluid' style={{cursor:"pointer",borderRadius:"20px"}} width={200} height={200} onClick={()=>handleOk(index)}/>
+              <img src={index?.img} alt="" className='img-fluid' style={{maxHeight:"200px",maxWidth:"200px",cursor:"pointer",borderRadius:"20px"}}onClick={()=>handleOk(index)}/>
               <span className='fs-4 fst-italic'>{index?.position}</span>
             </div>
            

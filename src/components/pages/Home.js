@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SwiperContainer from '../SwiperContainer'
 import Banner from './Banner'
 import Platforms from './Platforms'
 import Hexagon from './Hexagon'
 import HexagonData from '../static/HexagonData'
 import Meta from '../Meta'
+import { useDispatch } from 'react-redux'
+import { GetSessions } from '../features/session/sessionSlice'
 
 
 const Home = () => {
+  const dispatch = useDispatch()
+  useEffect(()=>{
+    dispatch(GetSessions())    
+  },[])
   return (  
     <>
     <Meta title="Home | SOCC Official"/>
