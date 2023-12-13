@@ -122,7 +122,7 @@ const PastSessions = () => {
                  />
                </div>
              ) : null;
-           })
+           }).reverse()
          ) : (
            <Loading />
          )}
