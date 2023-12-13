@@ -27,7 +27,7 @@ const PastSessions = () => {
     const year = date.getFullYear()
     const month = date.getMonth()
     const day = date.getDate()
-    const today = `${year}-${month}-${day}`
+    const today = `${year}-${month+1}-${day}`
     setDate(today)
   },[])
 
