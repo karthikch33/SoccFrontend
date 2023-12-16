@@ -8,7 +8,7 @@ const Bulb = () => {
       const response = await fetch('https://soccbackend.onrender.com');
       const data = await response.json();
       localStorage.setItem('server',JSON.stringify({'server':'ON'}))
-      setIsOn(data.bulbStatus);
+      setIsOn(true);
     } catch (error) {
       console.error('Error checking bulb status:', error);
     }
