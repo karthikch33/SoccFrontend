@@ -34,7 +34,14 @@ const serverSlice = createSlice({
             state.serverCondition = action.payload
             console.log('skice');
             if(action.payload?.status === 201)
-            localStorage.setItem('server', JSON.stringify({ server: 'ONIn' }));
+            {
+                const expirationMS =  1000;
+                const item = {
+                    value: {server:'ONIn'},
+                    expiration: new Date().getTime() + expirationMS,
+                  };
+                localStorage.setItem('server', JSON.stringify(item));
+            }
             else if(action.payload?.status === 404)
             localStorage.removeItem('server')
     })
