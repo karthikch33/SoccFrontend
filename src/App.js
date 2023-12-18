@@ -7,7 +7,6 @@ import PageNotFound from './components/pages/PageNotFound';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import CodingChannels from './components/pages/CodingChannels';
-import AdminSessionAddition from './components/pages/adminSessionAddition';
 import Home from './components/pages/Home';
 import Team from './components/pages/Team';
 import { Helmet } from 'react-helmet-async';
@@ -28,7 +27,6 @@ function App() {
                 <Route path='/contact' element={<Contact/>}/>
                 <Route path='/team' element={<Team/>}/>
                 <Route path='/announcements' element={<Announcements/>}/>
-                <Route path='/adminsessionaddition' element={<AdminSessionAddition/>}/>
                 <Route path='/registrations/:id' element={<SessionRegistraion/>}/>
                 <Route path='/feedback/:id' element={<FeedBack/>}/>
                 <Route path='/:unwanted' element={<PageNotFound/>}/>
