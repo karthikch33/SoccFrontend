@@ -62,13 +62,13 @@ const Team = () => {
           <div key={index} className='col-lg-4 col-md-6 col-sm-12 mb-4'>
             <div className='gallery-img d-flex flex-column align-items-center'>
               {/* <Image
-                width={200}
+                width={170}
                 src={}
                 alt={`Team Member ${index}`}
                 className='img-fluid'
                 preview="fasf"
               /> */}
-              <img src={index?.img} alt="" className='img-fluid' style={{maxHeight:"200px",maxWidth:"200px",cursor:"pointer",borderRadius:"20px"}}onClick={()=>handleOk(index)}/>
+              <img src={index?.img} alt="" className='img-fluid' style={{minWidth:"170px",minHeight:"170px",maxHeight:"170px",maxWidth:"170px",cursor:"pointer",borderRadius:"20px"}}onClick={()=>handleOk(index)}/>
               <span className='fs-4 fst-italic'>{index?.position}</span>
             </div>
            

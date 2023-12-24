@@ -35,9 +35,6 @@ const OngoingSessions = () => {
     const date1 = new Date(x)
     const date2 = new Date(y)
 
-    console.log(x);
-    console.log(y);
-
     if (date1.getTime() < date2.getTime()) {
         return false
       } else if (date1.getTime() >= date2.getTime()) {

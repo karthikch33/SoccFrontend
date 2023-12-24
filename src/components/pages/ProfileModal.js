@@ -13,7 +13,7 @@ const ProfileModal = (props) => {
       >
         <div className="row">
           <div className="col-12 d-flex align-items-center justify-content-center mb-4">
-            <img src={img} alt="" className='img-fluid' width={300} height={300} style={{borderRadius:"20px"}}/>
+            <img src={img} alt="" className='img-fluid' style={{minWidth:"240px",minHeight:"240px",maxHeight:"240px",maxWidth:"240px",cursor:"pointer",borderRadius:"20px"}}/>
           </div>
         </div>
         <div className='row'>

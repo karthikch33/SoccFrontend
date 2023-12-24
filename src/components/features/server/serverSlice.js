@@ -32,18 +32,6 @@ const serverSlice = createSlice({
             state.isSuccess = true
             state.isLoading = false
             state.serverCondition = action.payload
-            console.log('skice');
-            if(action.payload?.status === 201)
-            {
-                const expirationMS =  1000;
-                const item = {
-                    value: {server:'ONIn'},
-                    expiration: new Date().getTime() + expirationMS,
-                  };
-                localStorage.setItem('server', JSON.stringify(item));
-            }
-            else if(action.payload?.status === 404)
-            localStorage.removeItem('server')
     })
     .addCase(serverOnOrOff.rejected,(state,action)=>{
         state.isError = true

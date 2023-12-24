@@ -5,7 +5,6 @@ import CustomtInput from '../CustomtInput';
 import { Watermark } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import { contact } from '../features/auth/authSlice';
-import { toast } from 'react-toastify';
 import Meta from '../Meta';
 
 
@@ -19,7 +18,6 @@ let schema = yup.object().shape({
 const ContactPage = () => {
 
   const dispatch = useDispatch()
-  const {ContactSuccess} = useSelector(state=>state.auth)
 
 
   const formik = useFormik({
