@@ -19,6 +19,7 @@ const OngoingSessions = () => {
   },[])
 
   useEffect(()=>{
+    if(Array.isArray(AllSessions))
     setSessionsData(AllSessions?.filter(item=>compareTwoDates(item?.date, date)))
   },[AllSessions])
 
