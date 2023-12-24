@@ -1,12 +1,12 @@
 const SwiperData = [
     {
-        img:"http://res.cloudinary.com/dpkdi73b4/image/upload/v1701931892/cecve6a6mgdrwdnwnkbi.jpg"
+        img:"https://res.cloudinary.com/dpkdi73b4/image/upload/v1703394859/ufxafa5rx1lmaixv2jun.png"
     },
     {
-        img:"http://res.cloudinary.com/dpkdi73b4/image/upload/v1701931847/heh5b1qjeskyq1rftye3.jpg"
+        img:"https://res.cloudinary.com/dpkdi73b4/image/upload/v1703394857/mbgo0ck4nni5wncmj7qm.png"
     },
     {
-        img:"http://res.cloudinary.com/dpkdi73b4/image/upload/v1701931921/mdlthlk7a6hjltjsle8e.jpg"
+        img:"https://res.cloudinary.com/dpkdi73b4/image/upload/v1703394966/qex4uq5tuv58obyw2trl.jpg"
     },
     {
         img:"http://res.cloudinary.com/dpkdi73b4/image/upload/v1701931892/cecve6a6mgdrwdnwnkbi.jpg"

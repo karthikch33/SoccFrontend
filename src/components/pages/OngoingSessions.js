@@ -19,7 +19,7 @@ const OngoingSessions = () => {
   },[])
 
   useEffect(()=>{
-    setSessionsData(AllSessions)
+    setSessionsData(AllSessions?.filter(item=>compareTwoDates(item?.date, date)))
   },[AllSessions])
 
   useEffect(()=>{
@@ -97,14 +97,13 @@ const OngoingSessions = () => {
       {
         <div className="container">
         <div className="row">
-          {Array.isArray(sessionsData) ? (
+          {Array.isArray(sessionsData) ? sessionsData.length >=1 ?(
             sessionsData.map(element => {
               const sessionDescription = completeSessionDescription(element);
               const outcomeDescription = completeOutComeDescription(element);
               // const historyDescription = completeHistoryDescription(element);
   
-              return compareTwoDates(element?.date, date) ? (
-                <div key={element?._id} className="col-md-4 mb-4">
+              return  <div key={element?._id} className="col-md-4 mb-4">
                   <CardContainer
                     sessionDescription={sessionDescription}
                     outcomeDescription={outcomeDescription}
@@ -114,9 +113,8 @@ const OngoingSessions = () => {
                     // history={historyDescription}
                   />
                 </div>
-              ) : null;
             })
-          ) : (
+          ) :<label className='fs-2 text-center my-5'>No Upcoming Sessions Registered</label>: (
             <Loading />
           )}
         </div>
