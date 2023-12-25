@@ -69,7 +69,7 @@ const Team = () => {
                 preview="fasf"
               /> */}
               <img src={index?.img} alt="" className='img-fluid' style={{minWidth:"170px",minHeight:"170px",maxHeight:"170px",maxWidth:"170px",cursor:"pointer",borderRadius:"20px"}}onClick={()=>handleOk(index)}/>
-              <span className='fs-4 fst-italic'>{index?.position} {index?.Iid === "2100031268" ? "{SOCC WEBSITE CREATOR}":""}</span>
+              <span className='fs-4 fst-italic me-4'>{index?.Iid === "2100031268" ? <span style={{fontSize:"13px",marginLeft:"10px"}} >SOCC WEBSITE CREATOR</span> :index?.position }</span>
             </div>
            
           </div>
