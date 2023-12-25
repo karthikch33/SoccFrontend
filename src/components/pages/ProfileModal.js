@@ -46,6 +46,7 @@ const ProfileModal = (props) => {
               <a href={linkedIn}>Linked In</a>
             </div>
         </div>
+        
       </Modal>
     </>
   );

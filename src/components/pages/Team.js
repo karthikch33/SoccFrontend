@@ -69,13 +69,13 @@ const Team = () => {
                 preview="fasf"
               /> */}
               <img src={index?.img} alt="" className='img-fluid' style={{minWidth:"170px",minHeight:"170px",maxHeight:"170px",maxWidth:"170px",cursor:"pointer",borderRadius:"20px"}}onClick={()=>handleOk(index)}/>
-              <span className='fs-4 fst-italic'>{index?.position}</span>
+              <span className='fs-4 fst-italic'>{index?.position} {index?.Iid === "2100031268" ? "{SOCC WEBSITE CREATOR}":""}</span>
             </div>
            
           </div>
         ))}
       </div>
-      <ProfileModal open={open} name={name} id={id} mail={mail} year={year} linkedIn={linkedIn} handleOk={handleOk} handleCancel ={handleCancel} img={img}/>
+      <ProfileModal open={open} name={name} id={id} mail={mail} year={year} linkedIn={linkedIn} handleOk={handleOk} handleCancel ={handleCancel} img={img} />
     </div>
     </Watermark>
   );

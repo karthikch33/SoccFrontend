@@ -56,7 +56,8 @@ const TeamData = [
         Iid:"2100031268",
         Iyear:"3",
         Imail:"2100031268@kluniversity.in",
-        IlinkedIn:"https://www.linkedin.com/in/chalavadi-kvss-pavan-aditya-9b9722245/"
+        IlinkedIn:"https://www.linkedin.com/in/chalavadi-kvss-pavan-aditya-9b9722245/",
+        ISpecial:'Socc WebSite Creator'
     },
     {
         img:"http://res.cloudinary.com/dpkdi73b4/image/upload/v1701939540/vc7wid8uznh1dsrdsrpl.jpg",
@@ -159,7 +160,7 @@ const TeamData = [
         IlinkedIn:"https://www.linkedin.com/in/kommirisettysrinivas/ "
     },
     {
-        img:"https://static.vecteezy.com/system/resources/previews/007/319/933/original/black-avatar-person-icons-user-profile-icon-vector.jpg",
+        img:"https://res.cloudinary.com/dpkdi73b4/image/upload/v1703480585/psuof4vfnw2ned3efa3p.jpg",
         position:"CORE",
         name:"Lavanya ",
         Iname:"Lavanya",
