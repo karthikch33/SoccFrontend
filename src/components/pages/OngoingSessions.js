@@ -80,8 +80,18 @@ const OngoingSessions = () => {
   }
 
   const completeOutComeDescription = (currentData)=>{
+    return  <p className='fs-5 my-4 p-4'dangerouslySetInnerHTML={{__html:currentData?.outcomes}}>
+  </p>
+  }
+
+  const completeHistoryDescription = (currentData)=>{
     return  <>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis doloribus corporis tempora possimus, non voluptates quibusdam dolore eaque, similique obcaecati inventore, laborum corrupti odit labore. Porro suscipit doloremque laborum quod odio vitae sint consequatur?
+    <div className='row d-inline'>
+      <p className='fs-4 text-success'>Points For Registration:  <span>{currentData?.silincrease}</span></p>
+    </div>
+    <div className='row d-inline'>
+      <p className='fs-4 text-danger'>Penalty Points:  <span>{currentData?.sildecrease}</span></p>
+    </div>
   </>
   }
 
@@ -102,7 +112,7 @@ const OngoingSessions = () => {
             sessionsData.map(element => {
               const sessionDescription = completeSessionDescription(element);
               const outcomeDescription = completeOutComeDescription(element);
-              // const historyDescription = completeHistoryDescription(element);
+              const historyDescription = completeHistoryDescription(element);
   
               return  <div key={element?._id} className="col-md-4 mb-4">
                   <CardContainer
@@ -111,7 +121,7 @@ const OngoingSessions = () => {
                     sessionId={element?._id}
                     sessiontitle={element?.sessiontitle}
                     today={true}
-                    // history={historyDescription}
+                    history={historyDescription}
                   />
                 </div>
             })
