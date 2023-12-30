@@ -42,7 +42,7 @@ const ContactPage = () => {
       <div className="row justify-content-center">
         <div className="col-md-8">
           <h2 className="text-center mb-4">Contact Us</h2>
-          <form className="p-4 border rounded" onSubmit={formik.handleSubmit}>
+          <form className="p-4 border rounded bg-white" onSubmit={formik.handleSubmit}>
             <div className="form-group">
               <CustomtInput name="collegeId" type="text" value={formik.values.collegeId} placeholder="Your Id" onChange={formik.handleChange('collegeId')} />
               <div className="error">

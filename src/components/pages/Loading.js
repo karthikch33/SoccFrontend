@@ -88,7 +88,7 @@ const LoadingText = styled.h2`
   }
 `;
 
-const YourComponent = () => {
+const Loading = () => {
   return (
     <>
       <Background />
@@ -107,4 +107,4 @@ const YourComponent = () => {
   );
 };
 
-export default YourComponent;
+export default Loading;

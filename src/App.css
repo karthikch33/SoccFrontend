@@ -576,3 +576,78 @@ a{
 .bulb.off {
   background-color: red;
 }
+
+
+/* Background Css */
+.jumbo {
+  --waves: repeating-linear-gradient(
+    45deg,
+    #b3e0ff,
+    #b3e0ff 10%,
+    #66b3ff 10%,
+    #66b3ff 20%
+  );
+  background-image: var(--waves);
+  background-size: 200% 200%;
+  animation: wavesAnimation 2s linear infinite alternate;
+}
+
+@keyframes wavesAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+
+
+.jumbo::after {
+  content: "";
+  position: absolute;
+  z-index: -990;
+  inset: 0;
+  background-image: var(--stripes), var(--rainbow);
+  background-size: 200%, 100%;
+  animation: jumbo 60s linear infinite;
+  background-attachment: fixed;
+  mix-blend-mode: difference;
+}
+
+.dark .jumbo {
+  background-image: var(--stripesDark), var(--rainbow);
+  filter: blur(10px) opacity(50%) saturate(200%);
+}
+.dark .jumbo::after {
+  background-image: var(--stripesDark), var(--rainbow);
+}
+
+@keyframes jumbo {
+  from {
+      background-position: 50% 50%, 50% 50%;
+  }
+  to {
+      background-position: 350% 50%, 350% 50%;
+  }
+}
+
+/* Background Css Ends */
+
+/* Banner Img  */
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Adjust this value for desired float height */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating-image img {
+  animation: floatAnimation 3s ease-in-out infinite;
+}
+/* Banner Img  Ends */

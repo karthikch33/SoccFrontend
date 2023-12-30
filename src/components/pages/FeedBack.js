@@ -74,7 +74,7 @@ const FeedBack = () => {
         <CustomAlert/>
         <div className="row">
             <div className="col-12">
-            <form action="" className='my-4 submit-form' onSubmit={formik.handleSubmit}>
+            <form action="" className='my-4 submit-form bg-white' onSubmit={formik.handleSubmit}>
     <h2 className='mb-4'>{`${Session?.sessiontitle} FeedBack `}</h2>
 
     <div className='star'>
