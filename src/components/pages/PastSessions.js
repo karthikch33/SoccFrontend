@@ -45,38 +45,38 @@ const PastSessions = () => {
   }
 
   const completeSessionDescription = (currentData)=>{
-      return <>
-      <div className="row">
-        <div className="col-12">
-          <div className="imgdiv">
-            <Image
-              width={200}
-              src={currentData?.images}
-              className='img-fluid'
-          />
-          </div>
+    return <>
+    <div className="row">
+      <div className="col-12">
+        <div className="imgdiv d-flex justify-content-center align-items-center">
+          <Image
+            style={{maxHeight:"300px",maxWidth:"250px",minHeight:"300px",minWidth:"250px"}}
+            src={currentData?.images}
+            className='img-fluid'
+        />
         </div>
       </div>
-      <div className='row'>
-          <div className="col-12">
-            <ul>
-              <li>
-            <label htmlFor="" className='fs-4'>Date : </label> 
-            <span className='fs-6 mx-3'>{currentData?.date}</span>
-              </li>
-              <li>
-                <label htmlFor="" className='fs-4'>Timings :</label>
-                <span className='fs-6 mx-3'>{`${currentData?.startAt} - ${currentData?.ends}`}</span>
-              </li>
-              <li>
-                <label htmlFor="" className='fs-4'>Venu :</label>
-                <span className='fs-6 mx-3'>{currentData?.venue}</span>
-              </li>
-            </ul>
-          </div>
-      </div>
-    </>
-  }
+    </div>
+    <div className='row'>
+        <div className="col-12">
+          <ul>
+            <li>
+          <label htmlFor="" className='fs-4'>Date : </label> 
+          <span className='fs-6 mx-3'>{currentData?.date}</span>
+            </li>
+            <li>
+              <label htmlFor="" className='fs-4'>Timings :</label>
+              <span className='fs-6 mx-3'>{`${currentData?.startAt} - ${currentData?.ends}`}</span>
+            </li>
+            <li>
+              <label htmlFor="" className='fs-4'>Venu :</label>
+              <span className='fs-6 mx-3'>{currentData?.venue}</span>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </>
+}
 
   const completeOutComeDescription = (currentData)=>{
     return  <>
