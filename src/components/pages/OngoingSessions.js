@@ -108,7 +108,7 @@ const OngoingSessions = () => {
       {
         <div className="container">
         <div className="row">
-          {Array.isArray(sessionsData) && sessionsData.length===0 ? sessionsData.length >=1 ?(
+          {Array.isArray(AllSessions) && sessionsData.length!==0?(
             sessionsData.map(element => {
               const sessionDescription = completeSessionDescription(element);
               const outcomeDescription = completeOutComeDescription(element);
@@ -125,7 +125,7 @@ const OngoingSessions = () => {
                   />
                 </div>
             })
-          ) :<label className='fs-2 text-center my-5 text-dark'>No Upcoming Sessions Registered</label>: (
+          ) : Array.isArray(AllSessions) && sessionsData.length===0 ?<label className='fs-2 text-center my-5 text-dark'>No Upcoming Sessions Registered</label>: (
             <Loading />
           )}
         </div>
