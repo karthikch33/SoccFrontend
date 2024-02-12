@@ -1,5 +1,16 @@
 const TeamData = [
     {
+        img:"http://res.cloudinary.com/dpkdi73b4/image/upload/v1701939540/uo6fzhhmmlwicq6dnsma.jpg",
+        position:"DIRECTOR",
+        name:"Kvss Pavan Aditya",
+        Iname:"Kvss Pavan Aditya",
+        Iid:"2100031268",
+        Iyear:"3",
+        Imail:"2100031268@kluniversity.in",
+        IlinkedIn:"https://www.linkedin.com/in/chalavadi-kvss-pavan-aditya-9b9722245/",
+        ISpecial:'WebSite Creator'
+    },
+    {
     img:"http://res.cloudinary.com/dpkdi73b4/image/upload/v1701338067/aexesgckbscxmya5hmoc.jpg",
     position:"PRESIDENT",
     Iname:"Sai Harsha",
@@ -47,17 +58,6 @@ const TeamData = [
         Iyear:"3",
         Imail:"2100030001@kluniversity.in",
         IlinkedIn:"https://www.linkedin.com/in/abdul-afroz-145b85225?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    },
-    {
-        img:"http://res.cloudinary.com/dpkdi73b4/image/upload/v1701939540/uo6fzhhmmlwicq6dnsma.jpg",
-        position:"DIRECTOR",
-        name:"Kvss Pavan Aditya",
-        Iname:"Kvss Pavan Aditya",
-        Iid:"2100031268",
-        Iyear:"3",
-        Imail:"2100031268@kluniversity.in",
-        IlinkedIn:"https://www.linkedin.com/in/chalavadi-kvss-pavan-aditya-9b9722245/",
-        ISpecial:'Socc WebSite Creator'
     },
     {
         img:"http://res.cloudinary.com/dpkdi73b4/image/upload/v1701939540/vc7wid8uznh1dsrdsrpl.jpg",
