@@ -90,7 +90,7 @@ const TeamData = [
         IlinkedIn:""
     },
     {
-        img:"https://res.cloudinary.com/ddkdeeue3/image/upload/v1711017281/h5bkexhri4cws44awxmb.jpg",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgbI78v3a7Q5Tcm1DrdpZ7KEH2-ArooT9qzvFe6cLOYxy4wY-hp6dG-NrJKyv9_n5Hcjs&usqp=CAU",
         position:"DIRECTOR",
         name:"Chaitanya Kishore",
         Iname:"Chaitanya Kishore",
