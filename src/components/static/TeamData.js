@@ -11,7 +11,7 @@ const TeamData = [
         ISpecial:'WebSite Creator'
     },
     {
-    img:"https://res.cloudinary.com/ddkdeeue3/image/upload/v1711018554/uicuswqrrqdyntfuzxuo.jpg",
+    img:"https://res.cloudinary.com/dpkdi73b4/image/upload/v1701338067/aexesgckbscxmya5hmoc.jpg",
     position:"PRESIDENT",
     Iname:"Sai Harsha",
     Iid:"2100031411",
@@ -30,7 +30,7 @@ const TeamData = [
         IlinkedIn:"https://www.linkedin.com/in/konda-badari-narayana-aa6131226/"
     },
     {
-        img:"https://res.cloudinary.com/ddkdeeue3/image/upload/v1711018643/wtp7wuzlcsj2isfx0rbn.jpg",
+        img:"http://res.cloudinary.com/dpkdi73b4/image/upload/v1701940161/bo0hpa8lvoo5cr3wpk0r.jpg",
         position:"DIRECTOR",
         name:"Phani Charan",
         Iname:"Phani Charan",
