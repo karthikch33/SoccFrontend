@@ -70,7 +70,7 @@ const TeamData = [
         IlinkedIn:"https://www.linkedin.com/in/yogendra-chowdary-ab37a4248/"
     },
     {
-        img:"https://res.cloudinary.com/dpkdi73b4/image/upload/v1702365105/lh71dkycnwayfvy3rlz3.jpg",
+        img:"https://res.cloudinary.com/ddkdeeue3/image/upload/v1711017281/h5bkexhri4cws44awxmb.jpg",
         position:"Director",
         name:"BALAJI L",
         Iname:"BALAJI L",
