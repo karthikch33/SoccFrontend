@@ -20,8 +20,8 @@ const Footer = () => {
           <div className="col-4">
             <h4>Explore</h4>
             <ul className="footer-icons">
-              {/* <Link to={'/codingchannels'}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}} onClick={handleScrollToTop}>Coding Channels </label></li></Link> */}
-              <Link to={"/team"}>
+              <Link to={'/codingchannels'}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}} onClick={handleScrollToTop}>Coding Channels </label></li></Link>
+              {/* <Link to={"/team"}>
                 <li>
                   <BiLastPage />
                   <label
@@ -32,7 +32,7 @@ const Footer = () => {
                     Team
                   </label>
                 </li>
-              </Link>
+              </Link> */}
               <Link to={"/announcements"} onClick={handleScrollToTop}>
                 <li>
                   <BiLastPage />
@@ -110,7 +110,7 @@ const Footer = () => {
                   </label>
                 </li>
               </Link>
-              <Link to={"/team"}>
+              {/* <Link to={"/team"}>
                 <li>
                   <BiLastPage />
                   <label
@@ -121,7 +121,7 @@ const Footer = () => {
                     Team
                   </label>
                   </li>
-              </Link>
+              </Link> */}
               <Link to={"/sessions"}>
                 <li>
                   <BiLastPage />
