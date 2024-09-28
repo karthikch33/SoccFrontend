@@ -6,11 +6,11 @@ const Banner = () => {
                 <div className="container">
                     <div className="row row align-items-center">
                         <div className="col-lg-5 offset-lg-1 order-lg-1 floating-image">
-                            <img src="https://res.cloudinary.com/ddkdeeue3/image/upload/v1726193985/beyvlxadzz6el4owvisw.png" className="img-fluid" alt="Web Development" />
+                            <img src="https://res.cloudinary.com/ddkdeeue3/image/upload/v1727075571/cog7lae9yf7gqpysscmn.png" className="img-fluid" alt="Web Development" width="700px" />
                         </div>
                         <div className="col-lg-6">
                             <h1 className="mt-3">School Of Competitive Coding</h1>
-                            <p className="lead text-dark my-5" style={{fontFamily:"cursive"}}>
+                            <p className="lead text-dark my-5">
                             The School of Competitive Coding Club is committed to providing comprehensive training in coding, building strong problem-solving abilities, and fostering analytical and critical thinking. Unleashing one's coding potential and enabling coding enthusiasts for success in the rapidly evolving digital world is our club's credo</p>
                         </div>
                     </div>

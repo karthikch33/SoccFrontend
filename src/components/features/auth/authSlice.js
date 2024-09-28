@@ -10,6 +10,8 @@ const intialState = {
     isLoading:false,
     AlreadyRegisterd:'',
     ContactSuccess:'',
+    EmailToast:"",
+    RegisterToast:"",
     message:""
 }
 
@@ -48,12 +50,37 @@ export const authSlice = createSlice({
             state.isError = false;
             state.isLoading = true;
             state.isSuccess = false;
+            state.RegisterToast = toast.loading("Registering For Section")
         })
         .addCase(registrationSlice.fulfilled,(state,action)=>{
             state.isError = false
             state.isSuccess = true
             state.isLoading = false
             state.AlreadyRegisterd = action.payload
+            if(action.payload && action.payload?.status === 201){
+                toast.update(state.RegisterToast, {
+                    render: "Registered And Confirmation Mail Generated",
+                    type: toast.TYPE.SUCCESS,
+                    isLoading: false,
+                    autoClose: 3000,
+                });
+            } 
+            else if(action.payload && action.payload?.status === 301){
+                toast.update(state.RegisterToast, {
+                    render: "Registered Error in Mail Generation",
+                    type: toast.TYPE.INFO,
+                    isLoading: false, 
+                    autoClose: 3000,
+                });
+            }
+            else{
+                toast.update(state.RegisterToast, {
+                    render: action.payload?.message,
+                    type: toast.TYPE.ERROR,
+                    isLoading: false, 
+                    autoClose: 3000,
+                });
+            }          
         })
         .addCase(registrationSlice.rejected,(state,action)=>{
             state.isError = true
@@ -65,17 +92,36 @@ export const authSlice = createSlice({
             state.isError = false
             state.isLoading = true
             state.isSuccess = false
+            state.EmailToast = toast.loading("Sending Feedback")
         })
         .addCase(contact.fulfilled,(state,action)=>{
             state.isError = false
             state.isSuccess = true
             state.isLoading = false
             state.ContactSuccess = action.payload
-            if(state.ContactSuccess && state.ContactSuccess?.success){
-                toast.success('FeedBack Received And Mail Has Been Generated')
+            if(state.ContactSuccess && state.ContactSuccess?.status === 201){
+                toast.update(state.EmailToast, {
+                    render: "Sent And Confirmation Mail Generated",
+                    type: toast.TYPE.SUCCESS,
+                    isLoading: false,
+                    autoClose: 3000,
+                });
+            }
+            else if(state.ContactSuccess && state.ContactSuccess?.status === 301){
+                toast.update(state.EmailToast, {
+                    render: "Feedback Received Error in Mail Generation",
+                    type: toast.TYPE.INFO,
+                    isLoading: false, 
+                    autoClose: 3000,
+                });
             }
             else{
-                toast.error('FeedBack Submition Failed')
+                toast.update(state.EmailToast, {
+                    render: "Unexpected Error in Generating Mail",
+                    type: toast.TYPE.ERROR,
+                    isLoading: false, 
+                    autoClose: 3000,
+                });
             }
         })
         .addCase(contact.rejected,(state,action)=>{

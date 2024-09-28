@@ -76,7 +76,7 @@ const ContactPage = () => {
                 className="form-control my-4"
                 name="message"
                 rows="4"
-                placeholder="Your Message"
+                placeholder=""
                 value={formik.values.message}
                 onChange={formik.handleChange('message')}
                 required

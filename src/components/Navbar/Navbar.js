@@ -53,7 +53,7 @@ function NavBar() {
                 Contact
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink
                 exact
                 to="/team"
@@ -63,7 +63,7 @@ function NavBar() {
               >
                Team
               </NavLink>
-            </li>
+            </li> */}
           </ul>
           <div className="nav-icon" onClick={handleClick}>
             {click ? (
