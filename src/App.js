@@ -20,7 +20,7 @@ function App() {
                 <Route path='/sessions' element={<Sessions/>}/>
                 <Route index element={<Home/>}/>
                 <Route path='/contact' element={<Contact/>}/>
-                <Route path='/team' element={<Team/>}/>
+                {/* <Route path='/team' element={<Team/>}/> */}
                 <Route path='/announcements' element={<Announcements/>}/>
                 <Route path='/registrations/:id' element={<SessionRegistraion/>}/>
                 <Route path='/feedback/:id' element={<FeedBack/>}/>

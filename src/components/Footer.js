@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="col-4">
             <h4>Explore</h4>
             <ul className="footer-icons">
-              <Link to={'/codingchannels'}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}} onClick={handleScrollToTop}>Coding Channels </label></li></Link>
+              {/* <Link to={'/codingchannels'}><li><BiLastPage/><label className='mx-4' style={{cursor:"pointer"}} onClick={handleScrollToTop}>Coding Channels </label></li></Link> */}
               {/* <Link to={"/team"}>
                 <li>
                   <BiLastPage />
@@ -122,7 +122,7 @@ const Footer = () => {
                   </label>
                   </li>
               </Link> */}
-              <Link to={"/sessions"}>
+              {/* <Link to={"/sessions"}>
                 <li>
                   <BiLastPage />
                   <label
@@ -133,14 +133,14 @@ const Footer = () => {
                     Sessions
                   </label>
                 </li>
-              </Link>
+              </Link> */}
             </ul>
           </div>
         </div>
         <div className="row">
           <div className="col-12">
             <h6 className="my-4 text-center copyright">
-              <AiFillCopyrightCircle /> <span></span>Copyright 2023 Socc Offical
+              <AiFillCopyrightCircle /> <span></span>Copyright 2024-2039 Socc Offical
             </h6>
           </div>
         </div>
